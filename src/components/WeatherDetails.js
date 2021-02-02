@@ -25,20 +25,20 @@ const WeatherDetails = ({ details }) => {
         <h3 style={{ padding: "20px 0 0 0" }}>{details.main.feels_like} °C</h3>
       </div>
       <div>
-        <h3>Minimum</h3>
+        <h3>Lowest</h3>
         <h3 style={{ padding: "20px 0 0 0" }}>{details.main.temp_min} °C</h3>
       </div>
       <div>
-        <h3>Maximum</h3>
+        <h3>Highest</h3>
         <h3 style={{ padding: "20px 0 0 0" }}>{details.main.temp_max} °C</h3>
       </div>
       <div>
         <h3>Pressure</h3>
-        <h3 style={{ padding: "20px 0 0 0" }}>{details.main.pressure} Pa</h3>
+        <h3 style={{ padding: "20px 0 0 0" }}>{details.main.pressure} hPa</h3>
       </div>
       <div>
         <h3>Humidity</h3>
-        <h3 style={{ padding: "20px 0 0 0" }}>{details.main.humidity} g/m3</h3>
+        <h3 style={{ padding: "20px 0 0 0" }}>{details.main.humidity} %</h3>
       </div>
     </div>
   );
