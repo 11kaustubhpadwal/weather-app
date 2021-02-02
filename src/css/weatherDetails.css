@@ -6,3 +6,20 @@
   gap: 50px;
   color: white;
 }
+
+@keyframes icon-animation {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(10px, 0);
+  }
+}
+
+.weather-icon {
+  width: 5rem;
+  animation-name: icon-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

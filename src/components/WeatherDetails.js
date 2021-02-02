@@ -1,11 +1,14 @@
 import "../css/weatherDetails.css";
-import weatherSVG from "../assets/weather.svg";
 
 const WeatherDetails = ({ details }) => {
   return (
     <div className="grid-container-weather-details">
       <div>
-        <img src={weatherSVG} alt="Logo" style={{ width: "3rem" }}></img>
+        <img
+          src={`http://openweathermap.org/img/wn/${details.weather[0].icon}@2x.png`}
+          alt="Logo"
+          className="weather-icon"
+        ></img>
       </div>
       <div>
         <h3>{details.weather[0].main}</h3>
