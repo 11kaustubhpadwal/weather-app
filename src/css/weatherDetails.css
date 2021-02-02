@@ -1,0 +1,8 @@
+.grid-container-weather-details {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  justify-content: center;
+  padding: 30px 0 20px 0;
+  gap: 50px;
+  color: white;
+}
