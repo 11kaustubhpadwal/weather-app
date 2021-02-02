@@ -29,7 +29,9 @@ const App = () => {
       setLoading(false);
     } catch (e) {
       setLoading(false);
-      setError("An error occurred. Please try again.");
+      setError(
+        "An error occurred. Please check the city's spelling and try again."
+      );
       setCurrentCity(null);
     }
   };
