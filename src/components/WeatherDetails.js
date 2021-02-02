@@ -1,39 +1,41 @@
 import "../css/weatherDetails.css";
 import weatherSVG from "../assets/weather.svg";
 
-const WeatherDetails = () => {
+const WeatherDetails = ({ details }) => {
   return (
     <div className="grid-container-weather-details">
       <div>
         <img src={weatherSVG} alt="Logo" style={{ width: "3rem" }}></img>
       </div>
       <div>
-        <h3>Clear</h3>
-        <p>clear sky</p>
+        <h3>{details.weather[0].main}</h3>
+        <p style={{ padding: "20px 0 0 0" }}>
+          {details.weather[0].description}
+        </p>
       </div>
       <div>
         <h3>Temperature</h3>
-        <h3>value</h3>
+        <h3 style={{ padding: "20px 0 0 0" }}>{details.main.temp} °C</h3>
       </div>
       <div>
         <h3>Feels like</h3>
-        <h3>value</h3>
+        <h3 style={{ padding: "20px 0 0 0" }}>{details.main.feels_like} °C</h3>
       </div>
       <div>
         <h3>Minimum</h3>
-        <h3>value</h3>
+        <h3 style={{ padding: "20px 0 0 0" }}>{details.main.temp_min} °C</h3>
       </div>
       <div>
         <h3>Maximum</h3>
-        <h3>value</h3>
+        <h3 style={{ padding: "20px 0 0 0" }}>{details.main.temp_max} °C</h3>
       </div>
       <div>
         <h3>Pressure</h3>
-        <h3>value</h3>
+        <h3 style={{ padding: "20px 0 0 0" }}>{details.main.pressure} Pa</h3>
       </div>
       <div>
         <h3>Humidity</h3>
-        <h3>value</h3>
+        <h3 style={{ padding: "20px 0 0 0" }}>{details.main.humidity} g/m3</h3>
       </div>
     </div>
   );
